@@ -23,7 +23,7 @@
         BorderColor="Gray"
         CornerRadius="10"
         HasShadow="False"
-        Padding="{OnPlatform Android='1.5', iOS='1.5', UWP='5'}">
+        Padding="{OnPlatform Android='1.5', iOS='1.5', UWP='5', macOS='7'}">
         <StackLayout
             Orientation="Horizontal">
             

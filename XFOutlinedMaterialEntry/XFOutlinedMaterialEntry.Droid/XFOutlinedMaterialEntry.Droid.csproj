@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -101,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFOutlinedMaterialEntry\XFOutlinedMaterialEntry.csproj">
-      <Project>{EBB2F135-AC3B-4F15-9F16-2FC8BAC3A62E}</Project>
+      <Project>{7D8D49A6-278F-424D-A9BE-CBFB91322F4F}</Project>
       <Name>XFOutlinedMaterialEntry</Name>
     </ProjectReference>
   </ItemGroup>
