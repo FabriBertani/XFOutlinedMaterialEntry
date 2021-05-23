@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:XFOutlinedMaterialEntry.Components"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="XFOutlinedMaterialEntry.MainPage"
+    ios:Page.UseSafeArea="True">
+    <ScrollView
+        BackgroundColor="White">
+        <StackLayout
+            Orientation="Vertical"
+            Padding="30"
+            Spacing="15">
+
+            <Entry
+                Visual="Default"
+                BackgroundColor="White"
+                Placeholder="This it's a regular entry" 
+                PlaceholderColor="Gray"
+                FontSize="Medium"
+                TextColor="Black" />
+
+            <Entry
+                Visual="Material"
+                BackgroundColor="White"
+                Placeholder="This it's a Xamarin Material Entry" 
+                PlaceholderColor="Gray" 
+                FontSize="Medium"
+                TextColor="Black" />
+
+            <components:OutlinedMaterialEntry
+                PlaceholderText="Outlined Material Entry"
+                Keyboard="Text"
+                ReturnType="Next" />
+            
+            <components:OutlinedMaterialEntry
+                PlaceholderText="With Helper"
+                Keyboard="Email"
+                ReturnType="Next"
+                HelperText="Helper message" />
+
+            <components:OutlinedMaterialEntry
+                PlaceholderText="With char counter"
+                Keyboard="Chat"
+                ReturnType="Next"
+                MaxLength="20" />
+
+            <components:OutlinedMaterialEntry
+                PlaceholderText="With leading icon"
+                Keyboard="Email"
+                ReturnType="Next"
+                LeadingIcon="ic_user.png" />
+
+            <components:OutlinedMaterialEntry
+                PlaceholderText="With password"
+                Keyboard="Default"
+                ReturnType="Next"
+                IsPassword="True" />
+
+            <components:OutlinedMaterialEntry
+                PlaceholderText="With error"
+                Keyboard="Email"
+                ReturnType="Next"
+                HasError="True"
+                ErrorText="Error message" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
